@@ -1,0 +1,51 @@
+<div class="logo"></div>
+<div class="wrap">
+    <div class="container">
+        <div class="inner">
+            <div class="instructions">
+                Welcome to the MySchedule tech interview
+                <div class="sub-header">
+                    On submit, compare two input timespans and return true if there is a conflict between the two and false if there is none.  For example, if timespan A is 10:30am-2:30pm, and timespan B is 1:30pm-5:30pm on the same day, this should return true, because the timespan A and timespan B overlap.  If there is no overlap, return false.  Use the return value to display feedback in the UI.
+
+                    Documentation for the datetimepicker can be found
+                    <a href="https://www.telerik.com/kendo-angular-ui/components/dateinputs/datetimepicker/" target="_blank">here</a>.
+                </div>
+            </div>
+            <div class="feedback positive">
+                <div class="feedback-icon">!</div>
+                <div class="feedback-text">This is the positive feedback cell</div>
+            </div>
+            <div class="feedback negative">
+                <div class="feedback-icon">!</div>
+                <div class="feedback-text">This is the negative feedback cell</div>
+            </div>
+            <div class="time-input-wrap">
+                <div class="time-input-cell">
+                    <div class="cell-header">Timespan A</div>
+                    <div class="margin-bottom-sm">
+                        <label>span start</label>
+                        <kendo-datetimepicker [format]="format" [(value)]="value"></kendo-datetimepicker>
+                    </div>
+                    <div>
+                        <label>span end</label>
+                        <kendo-datetimepicker [format]="format" [(value)]="value"></kendo-datetimepicker>
+                    </div>
+                </div>
+                <div class="time-input-cell">
+                    <div class="cell-header">Timespan B</div>
+                     <div class="margin-bottom-sm">
+                        <label>span start</label>
+                        <kendo-datetimepicker [format]="format" [(value)]="value"></kendo-datetimepicker>
+                    </div>
+                    <div>
+                        <label>span end</label>
+                        <kendo-datetimepicker [format]="format" [(value)]="value"></kendo-datetimepicker>
+                    </div>
+                </div>
+            </div>
+            <div class="action-wrap">
+                <div class="action-btn">submit</div>
+            </div>
+        </div>
+    </div>
+</div>
